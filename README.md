@@ -15,3 +15,16 @@ Skrypt automatycznie filtruje włączone konta użytkowników, którzy nie logow
 * Wyciąganie rozszerzonych właściwości (LastLogonDate, Email).
 * Dynamiczne generowanie raportu do pliku CSV z datą w nazwie.
 * Bezpieczne logowanie z wykorzystaniem `Get-Credential`.
+
+## 📋 Skrypt: Get-ExpiredPasswordsReport.ps1
+
+### Problem
+Polityka wielu organizacji wymaga regularnej zmiany haseł.
+
+### Rozwiązanie
+Skrypt identyfikuje aktywne konta, które nie zmieniały hasła przez ostatnie 90 dni i generuje szczegółowy raport z wyliczoną liczbą dni od ostatniej zmiany.
+
+### Kluczowe funkcjonalności:
+* Filtrowanie kont bezpośrednio na serwerze (optymalizacja wydajności).
+* Wyliczanie różnicy dat (atrybut dynamiczny `DniOdZmiany`).
+* Pełna obsługa błędów i bezpieczne logowanie.
